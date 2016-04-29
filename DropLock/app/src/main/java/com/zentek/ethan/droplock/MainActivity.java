@@ -31,11 +31,15 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
     public void onClick(View calc_button) {
         String num1 = etfirst.getText().toString();
         String num2 = etsecond.getText().toString();
+        float num3 = (float) 9.8;
         switch(calc_button.getId()) {
             case R.id.calc_button:
                 try {
-                    int division = (Integer.parseInt(num1) / Integer.parseInt(num2));
-                    result.setText((String.valueOf(division)));
+                    float division = (Integer.parseInt(num1) / Integer.parseInt(num2));
+                    double num9 = Math.sqrt((division * num3));
+                    double num10 = (num9 / 10);
+
+                    result.setText(new java.text.DecimalFormat("##.##").format(num10));
 
                 }
                 catch(Exception e) {

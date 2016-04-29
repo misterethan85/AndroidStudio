@@ -75,10 +75,20 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:inputType="number"
-        android:ems="10"
+        android:ems="14"
         android:id="@+id/result"
         android:layout_marginTop="79dp"
         android:layout_below="@+id/calc_button"
-        android:layout_centerHorizontal="true" />
+        android:layout_alignLeft="@+id/calc_button"
+        android:layout_alignStart="@+id/calc_button" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Bullet Drop in meters:"
+        android:id="@+id/textView"
+        android:layout_alignTop="@+id/result"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true" />
 
 </RelativeLayout>

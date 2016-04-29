@@ -7,7 +7,7 @@
     <string name="calc_button">Calculate!</string>
     <string name="metric"></string>
     <string name="switch1">UNITS</string>
-    <string name="result"></string>
+    <string name="result">Bullet Drop in meters</string>
     <string name="input1"></string>
     <string name="input2"></string>
 
